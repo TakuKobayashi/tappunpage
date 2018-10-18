@@ -9,12 +9,12 @@ default: &default
 
 development:
   <<: *default
-  database: taptappun_development
+  database: tappunpage_development
 
 test:
   <<: *default
-  database: taptappun_test
+  database: tappunpage_test
 
 production:
   <<: *default
-  database: taptappun_production
+  database: tappunpage_production
