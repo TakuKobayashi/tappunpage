@@ -1,5 +1,10 @@
 {
   "name": "tappunpage",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.21.0",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-manifest-plugin": "^2.0.4"
+  }
 }
