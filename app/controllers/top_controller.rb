@@ -1,0 +1,2 @@
+class TopController < BaseController
+end
