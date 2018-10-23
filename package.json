@@ -31,8 +31,7 @@
   },
   "scripts": {
     "webpack:clean": "rimraf public/assets",
-    "webpack:build": "NODE_ENV=production $(npm bin)/webpack -p",
-    "webpack:watch": "webpack-dev-server",
-    "build": "npm run webpack:clean && npm run webpack:build"
+    "webpack:build:production": "webpack --mode=production --config webpack.config.prod.js --progress",
+    "webpack:watch": "webpack-dev-server --config webpack.config.dev.js"
   }
 }
