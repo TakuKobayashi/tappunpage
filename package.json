@@ -1,23 +1,21 @@
 {
   "name": "tappunpage",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^2.5.21",
+    "vue-loader": "^15.5.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
-    "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^1.0.0",
-    "file-loader": "^2.0.0",
-    "font-awesome": "^4.7.0",
-    "font-awesome-webpack": "^0.0.5-beta.2",
-    "imports-loader": "^0.8.0",
-    "jquery": "^3.3.1",
-    "node-sass": "^4.9.4",
-    "sass-loader": "^7.1.0",
-    "url-loader": "^1.1.2",
+    "vue": "*",
+    "vue-loader": "*",
+    "vue-template-compiler": "*",
+    "css-loader": "*",
+    "style-loader": "*",
     "webpack": "^4.22.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
@@ -26,6 +24,9 @@
   "scripts": {
     "webpack:clean": "rimraf public/assets",
     "webpack:build:production": "webpack --mode=production --config webpack.config.prod.js --progress",
-    "webpack:watch": "webpack-dev-server --config webpack.config.dev.js"
+    "webpack:watch": "webpack-dev-server --hot --config webpack.config.dev.js"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"]
   }
 }
