@@ -16,12 +16,11 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /\.(css|sass|scss)$/,
+        test: /\.css$/,
         use: [
           'vue-style-loader',
           'style-loader',
           'css-loader',
-          'sass-loader'
         ] // css-loader -> vue-style-loaderの順で通していく
       },
       {

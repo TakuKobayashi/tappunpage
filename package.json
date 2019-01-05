@@ -12,6 +12,7 @@
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^0.1.19",
     "vue": "*",
+    "vue-router": "*",
     "vue-loader": "*",
     "vue-template-compiler": "*",
     "css-loader": "*",
