@@ -16,6 +16,7 @@
     "vue-template-compiler": "*",
     "css-loader": "*",
     "style-loader": "*",
+    "sass-loader": "*",
     "webpack": "^4.22.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
@@ -27,6 +28,8 @@
     "webpack:watch": "webpack-dev-server --hot --config webpack.config.dev.js"
   },
   "babel": {
-    "presets": ["@babel/preset-env"]
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }

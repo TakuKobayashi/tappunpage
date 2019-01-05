@@ -1,6 +1,5 @@
 const webpack = require('webpack')
 const path = require('path')
-const ManifestPlugin = require('webpack-manifest-plugin')
 const assetPathRoot = 'public/assets';
 
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
