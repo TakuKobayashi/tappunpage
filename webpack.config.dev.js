@@ -17,7 +17,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['vue-style-loader', 'css-loader'] // css-loader -> vue-style-loaderの順で通していく
+        use: ['vue-style-loader', 'style-loader', 'css-loader'] // css-loader -> vue-style-loaderの順で通していく
+      },
+      {
+        test: /\.(otf|eot|svg|ttf|woff|woff2)(\?.+)?$/,
+        loader: 'url-loader'
       },
     ]
   },

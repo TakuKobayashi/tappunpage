@@ -18,8 +18,8 @@
 
 <template>
   <div>
-    <button v-on:click="decrement">-</button>
+    <el-button type="primary" v-on:click="decrement">-</el-button>
     <span>{{count}}</span>
-    <button v-on:click="increment">+</button>
+    <el-button type="primary" v-on:click="increment">+</el-button>
   </div>
 </template>
