@@ -6,7 +6,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   module: {
-  rules: [
+    rules: [
       {
         test: /\.vue$/, // ファイルが.vueで終われば...
         loader: 'vue-loader' // vue-loaderを使う
@@ -24,8 +24,11 @@ module.exports = {
         ] // css-loader -> vue-style-loaderの順で通していく
       },
       {
-        test: /\.(otf|eot|svg|ttf|woff|woff2)(\?.+)?$/,
-        loader: 'url-loader'
+        test: /\.(gif|png|jpe?g|otf|eot|wof|woff|woff2|ttf|svg)(\?.+)?$/,
+        loader: 'url-loader',
+        options: {
+          name: '../images/[name].[ext]'
+        }
       },
     ]
   },
