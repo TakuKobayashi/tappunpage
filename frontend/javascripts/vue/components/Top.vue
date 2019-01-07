@@ -11,7 +11,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="bg">
     <span>{{title}}</span>
     <img :src="sample_img">
   </div>

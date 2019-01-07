@@ -29,5 +29,6 @@
   </div>
 </template>
 
-<style scoped>
+<style>
+  @import '../../../stylesheets/main.css';
 </style>

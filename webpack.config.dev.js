@@ -3,6 +3,7 @@ const path = require('path')
 const assetPathRoot = 'public/assets';
 
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   module: {
@@ -41,7 +42,10 @@ module.exports = {
     },
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+    })
   ],
   entry: {
     index: path.resolve(__dirname, 'frontend/javascripts/index.js')
