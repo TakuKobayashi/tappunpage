@@ -29,7 +29,7 @@
   },
   "scripts": {
     "webpack:clean": "rimraf public/assets",
-    "webpack:build:production": "webpack --mode=production --config webpack.config.prod.js --progress",
+    "webpack:build:production": "NODE_ENV=production webpack --mode=production --config webpack.config.prod.js -p --progress --profile --colors",
     "webpack:watch": "webpack-dev-server --hot --config webpack.config.dev.js"
   },
   "babel": {
