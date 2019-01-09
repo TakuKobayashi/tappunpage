@@ -30,5 +30,6 @@
 </template>
 
 <style>
+  @import '../../../stylesheets/animate.min.css';
   @import '../../../stylesheets/main.css';
 </style>
